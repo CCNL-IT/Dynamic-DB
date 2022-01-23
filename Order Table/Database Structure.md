@@ -6,10 +6,10 @@
     <th text-align="center" width="150">Update</th>
   </tr>  
   <tr>
-    <td text-align="left">OrderID</td>
-    <td text-align="left">uniqueidentifier</td>
-    <td text-align="center">Y</td>
-    <td text-align="center"></td>
+    <td align="left">OrderID</td>
+    <td align="left">uniqueidentifier</td>
+    <td align="center">Y</td>
+    <td align="center"></td>
   </tr>
   <tr>
     <td text-align="left">Company</td>
