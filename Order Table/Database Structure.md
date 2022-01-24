@@ -138,6 +138,12 @@
     <td text-align="center"></td>
   </tr>
   <tr>
+    <td text-align="left">OrderStatus</td>
+    <td text-align="left">nvarchar(50)</td>
+    <td text-align="center"></td>
+    <td text-align="center"></td>
+  </tr>
+  <tr>
     <td text-align="left">DateCreated</td>
     <td text-align="left">datetime</td>
     <td text-align="center"></td>
