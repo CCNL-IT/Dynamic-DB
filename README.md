@@ -1,4 +1,7 @@
 DataBase version upgrade log
+## 2022-01-24
+* Add Mapping Table [No synchronization required]</br>
+  Update the port code,you can use the port code to correspond with the port code in the business
 ## 2022-01-20
 ###### OrderTable：
 * Add 'TradeLane' field. 
