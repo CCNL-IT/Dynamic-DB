@@ -12,7 +12,7 @@
     <td align="center"></td>
   </tr>
   <tr>
-    <td text-align="left">Company</td>
+    <td text-align="left">CompanyID</td>
     <td text-align="left">int</td>
     <td text-align="center"></td>
     <td text-align="center"></td>
