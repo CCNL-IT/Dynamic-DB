@@ -1,6 +1,6 @@
 DataBase version upgrade log
 ## 2022-01-25
-* Add Add DestinationAgent field.
+* Add DestinationAgent field.
 ## 2022-01-24
 * Add Mapping Table [No synchronization required]</br>
   Update the port code,you can use the port code to correspond with the port code in the business
