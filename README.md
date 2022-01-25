@@ -1,5 +1,6 @@
 DataBase version upgrade log
 ## 2022-01-25
+* Order related datetime changed to EST time
 * Add DestinationAgent field.
 ## 2022-01-24
 * Add Mapping Table [No synchronization required]</br>
