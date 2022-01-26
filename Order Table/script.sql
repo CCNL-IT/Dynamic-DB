@@ -1,6 +1,6 @@
 USE [Dynamic]
 GO
-/****** Object:  Table [dbo].[Order]    Script Date: 01/25/2022 09:30:14 ******/
+/****** Object:  Table [dbo].[Order]    Script Date: 01/26/2022 13:51:32 ******/
 SET ANSI_NULLS ON
 GO
 SET QUOTED_IDENTIFIER ON
@@ -12,6 +12,8 @@ CREATE TABLE [dbo].[Order](
 	[BOL] [nvarchar](50) NULL,
 	[SCACCode] [nvarchar](50) NULL,
 	[TradeLane] [nvarchar](50) NULL,
+	[VesselName] [nvarchar](50) NULL,
+	[VoyNo] [nvarchar](50) NULL,
 	[PortOfLoadingCode] [nvarchar](50) NOT NULL,
 	[PortOfLoading] [nvarchar](200) NOT NULL,
 	[PortOfDischargeCode] [nvarchar](50) NOT NULL,
@@ -40,15 +42,15 @@ CREATE TABLE [dbo].[Order](
 )WITH (PAD_INDEX  = OFF, STATISTICS_NORECOMPUTE  = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS  = ON, ALLOW_PAGE_LOCKS  = ON) ON [PRIMARY]
 ) ON [PRIMARY]
 GO
-/****** Object:  Default [DF_Order_DateCreated]    Script Date: 01/25/2022 09:30:14 ******/
+/****** Object:  Default [DF_Order_DateCreated]    Script Date: 01/26/2022 13:51:32 ******/
 ALTER TABLE [dbo].[Order] ADD  CONSTRAINT [DF_Order_DateCreated]  DEFAULT (getdate()) FOR [DateCreated]
 GO
-/****** Object:  Default [DF_Order_IsUpdate]    Script Date: 01/25/2022 09:30:14 ******/
+/****** Object:  Default [DF_Order_IsUpdate]    Script Date: 01/26/2022 13:51:32 ******/
 ALTER TABLE [dbo].[Order] ADD  CONSTRAINT [DF_Order_IsUpdate]  DEFAULT ((1)) FOR [IsUpdate]
 GO
-/****** Object:  Default [DF_Order_UpdateDate]    Script Date: 01/25/2022 09:30:14 ******/
+/****** Object:  Default [DF_Order_UpdateDate]    Script Date: 01/26/2022 13:51:32 ******/
 ALTER TABLE [dbo].[Order] ADD  CONSTRAINT [DF_Order_UpdateDate]  DEFAULT (getdate()) FOR [UpdateDate]
 GO
-/****** Object:  Default [DF_Order_IsCanceled]    Script Date: 01/25/2022 09:30:14 ******/
+/****** Object:  Default [DF_Order_IsCanceled]    Script Date: 01/26/2022 13:51:32 ******/
 ALTER TABLE [dbo].[Order] ADD  CONSTRAINT [DF_Order_IsCanceled]  DEFAULT ((0)) FOR [IsCanceled]
 GO
